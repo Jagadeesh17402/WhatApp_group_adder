@@ -2,9 +2,4 @@ streamlit
 pandas
 selenium
 beautifulsoup4
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-
-chrome_options = Options()
+webdriver
