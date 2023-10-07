@@ -1,10 +1,8 @@
 import streamlit as st
 import pandas as pd
 import time
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
+
 
 # Set page title and page-wide styling
 st.set_page_config(
@@ -12,6 +10,28 @@ st.set_page_config(
     page_icon=":calling:",
     layout="centered"
 )
+
+import os, sys
+
+
+
+@st.cache_data
+def install_chromedriver():
+    os.system('sbase install chromedriver')
+    os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/chromedriver /home/appuser/venv/bin/chromedriver')
+
+_ = install_chromedriver()
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+
+
+
 # Custom CSS for styling
 st.markdown("""
 <style>
