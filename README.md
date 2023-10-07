@@ -24,4 +24,4 @@ Make sure your system meets the following requirements to run the app:
 1. Clone this repository to your local machine.
 
    ```bash
-   git clone https://github.com/yourusername/whatsapp-group-joiner.git
+   git clone https://github.com/Jagadeesh17402/WhatApp_group_adder
