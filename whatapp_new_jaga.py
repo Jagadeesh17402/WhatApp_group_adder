@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import time
-from bs4 import BeautifulSoup
+
 
 
 # Set page title and page-wide styling
@@ -22,6 +22,7 @@ def install_chromedriver():
 
 _ = install_chromedriver()
 
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
